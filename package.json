@@ -1,0 +1,10 @@
+{
+	"name": "cli-evaluate-examples",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"@orq-ai/evaluatorq": "^1.0.0",
+		"@orq-ai/evaluators": "^1.0.0",
+		"@orq-ai/node": "^4.0.0"
+	}
+}
