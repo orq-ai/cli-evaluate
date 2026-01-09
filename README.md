@@ -4,6 +4,11 @@ Run [evaluatorq](https://github.com/orq-ai/orqkit) evaluation files in your CI/C
 
 > **Source Repository**: This action is maintained in the [orqkit monorepo](https://github.com/orq-ai/orqkit). The source code for the CLI and evaluatorq framework lives there.
 
+## Prerequisites
+
+This action requires you to install your project dependencies before running evaluations.
+
+
 ## Usage
 
 ### TypeScript

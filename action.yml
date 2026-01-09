@@ -55,9 +55,10 @@ runs:
         ORQ_DISABLE_TRACING: ${{ inputs.disable-tracing }}
         OTEL_EXPORTER_OTLP_ENDPOINT: ${{ inputs.otel-endpoint }}
       run: |
-        if bunx @orq-ai/cli evaluate "${{ inputs.pattern }}"; then
-          echo "passed=true" >> $GITHUB_OUTPUT
-        else
+        bunx @orq-ai/cli evaluate "${{ inputs.pattern }}"
+        exit_code=$?
+        if [ $exit_code -ne 0 ]; then
           echo "passed=false" >> $GITHUB_OUTPUT
-          exit 1
+          exit $exit_code
         fi
+        echo "passed=true" >> $GITHUB_OUTPUT
