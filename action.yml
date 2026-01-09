@@ -32,11 +32,6 @@ inputs:
     description: "Custom OTEL endpoint for traces (overrides auto-detection from orq-base-url)"
     required: false
 
-outputs:
-  passed:
-    description: "Whether all evaluations passed"
-    value: ${{ steps.evaluate.outputs.passed }}
-
 runs:
   using: "composite"
   steps:
@@ -46,7 +41,6 @@ runs:
         bun-version: ${{ inputs.bun-version }}
 
     - name: Run evaluations
-      id: evaluate
       shell: bash
       working-directory: ${{ inputs.working-directory }}
       env:
@@ -54,11 +48,4 @@ runs:
         ORQ_BASE_URL: ${{ inputs.orq-base-url }}
         ORQ_DISABLE_TRACING: ${{ inputs.disable-tracing }}
         OTEL_EXPORTER_OTLP_ENDPOINT: ${{ inputs.otel-endpoint }}
-      run: |
-        bunx @orq-ai/cli evaluate "${{ inputs.pattern }}"
-        exit_code=$?
-        if [ $exit_code -ne 0 ]; then
-          echo "passed=false" >> $GITHUB_OUTPUT
-          exit $exit_code
-        fi
-        echo "passed=true" >> $GITHUB_OUTPUT
+      run: bunx @orq-ai/cli evaluate "${{ inputs.pattern }}"
