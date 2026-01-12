@@ -3,8 +3,8 @@
 	"private": true,
 	"type": "module",
 	"dependencies": {
-		"@orq-ai/evaluatorq": "^1.0.0",
-		"@orq-ai/evaluators": "^1.0.0",
+		"@orq-ai/evaluatorq": "1.1.0-rc.3 ",
+		"@orq-ai/evaluators": "1.1.0-rc.3 ",
 		"@orq-ai/node": "^4.0.0"
 	}
 }

@@ -5,8 +5,8 @@
     "": {
       "name": "cli-evaluate-examples",
       "dependencies": {
-        "@orq-ai/evaluatorq": "^1.0.0",
-        "@orq-ai/evaluators": "^1.0.0",
+        "@orq-ai/evaluatorq": "1.1.0-rc.3 ",
+        "@orq-ai/evaluators": "1.1.0-rc.3 ",
         "@orq-ai/node": "^4.0.0",
       },
     },
@@ -16,9 +16,9 @@
 
     "@modelcontextprotocol/sdk": ["@modelcontextprotocol/sdk@1.25.2", "", { "dependencies": { "@hono/node-server": "^1.19.7", "ajv": "^8.17.1", "ajv-formats": "^3.0.1", "content-type": "^1.0.5", "cors": "^2.8.5", "cross-spawn": "^7.0.5", "eventsource": "^3.0.2", "eventsource-parser": "^3.0.0", "express": "^5.0.1", "express-rate-limit": "^7.5.0", "jose": "^6.1.1", "json-schema-typed": "^8.0.2", "pkce-challenge": "^5.0.0", "raw-body": "^3.0.0", "zod": "^3.25 || ^4.0", "zod-to-json-schema": "^3.25.0" }, "peerDependencies": { "@cfworker/json-schema": "^4.1.1" }, "optionalPeers": ["@cfworker/json-schema"] }, "sha512-LZFeo4F9M5qOhC/Uc1aQSrBHxMrvxett+9KLHt7OhcExtoiRN9DKgbZffMP/nxjutWDQpfMDfP3nkHI4X9ijww=="],
 
-    "@orq-ai/evaluatorq": ["@orq-ai/evaluatorq@1.0.9", "", { "dependencies": { "chalk": "^5.4.1", "effect": "^3.17.4", "ora": "^8.2.0", "strip-ansi": "^7.1.0", "tslib": "^2.8.0" }, "peerDependencies": { "@orq-ai/node": "^3.9.26" }, "optionalPeers": ["@orq-ai/node"] }, "sha512-kI+wf7FKtuH19UjVIKBzLJYD4IYU7cwJhxhLZFavFN6QqTL7M4325KtaC3voC9Q0Ohk6RNuGMKhieUSIGkuxsg=="],
+    "@orq-ai/evaluatorq": ["@orq-ai/evaluatorq@1.1.0-rc.3", "", { "dependencies": { "chalk": "^5.4.1", "effect": "^3.17.4", "ora": "^8.2.0", "strip-ansi": "^7.1.0", "tslib": "^2.8.0" }, "peerDependencies": { "@opentelemetry/api": "^1.9.0", "@opentelemetry/exporter-trace-otlp-http": "^0.200.0", "@opentelemetry/resources": "^2.0.0", "@opentelemetry/sdk-node": "^0.200.0", "@opentelemetry/sdk-trace-base": "^2.0.0", "@opentelemetry/semantic-conventions": "^1.28.0", "@orq-ai/node": "^3.9.26" }, "optionalPeers": ["@opentelemetry/api", "@opentelemetry/exporter-trace-otlp-http", "@opentelemetry/resources", "@opentelemetry/sdk-node", "@opentelemetry/sdk-trace-base", "@opentelemetry/semantic-conventions", "@orq-ai/node"] }, "sha512-IMopNdHgK2KenX1x4HxIrQz5Z4JxOQLfNwjKCmFqjaaI7AxTDnytohtcJ3PvvDN9JIomIv8p6Ncawhgcyfrs7g=="],
 
-    "@orq-ai/evaluators": ["@orq-ai/evaluators@1.0.9", "", { "dependencies": { "openai": "^5.12.2", "tslib": "^2.3.0" }, "peerDependencies": { "@orq-ai/evaluatorq": "^1.0.9" } }, "sha512-AucfzG2GzQhGSiiRh27sUJ0dLxTIBMlRr2RBvtRV6gz9FPWDxvufpQAgTLEgQ35dp6GCHLMIOztjjlqaGPD9xg=="],
+    "@orq-ai/evaluators": ["@orq-ai/evaluators@1.1.0-rc.3", "", { "dependencies": { "openai": "^5.12.2", "tslib": "^2.3.0" }, "peerDependencies": { "@orq-ai/evaluatorq": "^1.1.0-rc.3" } }, "sha512-WANNGiyU5Im3odcFDnNWYxcEHBGFFSQIcdzbiXPSVz91FFNPrcd57oB7HV65tRI4V4gtBq9AinE5HO94m/w+sQ=="],
 
     "@orq-ai/node": ["@orq-ai/node@4.1.10", "", { "dependencies": { "@modelcontextprotocol/sdk": "^1.24.0", "zod": "^3.25.0 || ^4.0.0" }, "bin": { "mcp": "bin/mcp-server.js" } }, "sha512-cZtDLG35O2LHXdnTxVuxE+3gKJ1ByIgEdInqsacyGElfspcWOzuKXE9iODs6SLcZTJC3nQhinXLTm9133qeMDg=="],
 
