@@ -48,4 +48,5 @@ runs:
         ORQ_BASE_URL: ${{ inputs.orq-base-url }}
         ORQ_DISABLE_TRACING: ${{ inputs.disable-tracing }}
         OTEL_EXPORTER_OTLP_ENDPOINT: ${{ inputs.otel-endpoint }}
-      run: bunx @orq-ai/cli evaluate "${{ inputs.pattern }}"
+      run: |
+        bunx @orq-ai/cli evaluate "${{ inputs.pattern }}" || exit 1
